@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Insperção</title>
+<link rel="icon" href="imagens/iconecarro.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Insperção - Danos no Veículos</h1>
+	<h3>Tabela de Danos e Taxas</h3>
+	<form name="frmlocacao" action="">
+		<table id="tabela">
+			<thead>
+				<tr>
+					<th>id</th>
+					<th>Danos</th>
+					<th>Valor</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input type="checkbox" value="150" id="mec" onclick="check(mec,150)"></td>
+					<td>Mecânico</td>
+					<td>150</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" value="130" id="rod" onclick="check(rod,130)"></td>
+					<td>Rodagem</td>
+					<td>130</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" value="110" id="ilu" onclick="check(ilu,110)"></td>
+					<td>Iluminação</td>
+					<td>110</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" value="0" id="nada" onclick="check(nada,0)"></td>
+					<td>Nenhum</td>
+					<td>0</td>
+				</tr>
+			</tbody>
+		</table>
+		<br><input type="button" value="Finalizar" class="Botao1" onclick="validar()">
+	</form>
+	<script src="scripts/danos.js"></script>
+</body>
+</html>
